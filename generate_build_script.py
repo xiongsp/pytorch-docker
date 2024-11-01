@@ -654,7 +654,7 @@ jobs:
         run: docker/ubuntu/build.sh
 
       - name: Push docker image
-        run: docker push cnstark/pytorch:${{IMAGE_TAG}}
+        run: docker push spxiong/pytorch:${{IMAGE_TAG}}
 """
 
 
@@ -696,7 +696,7 @@ jobs:
         run: docker/centos/build.sh
 
       - name: Push docker image
-        run: docker push cnstark/pytorch:${{IMAGE_TAG}}
+        run: docker push spxiong/pytorch:${{IMAGE_TAG}}
 """
 
 
@@ -705,7 +705,7 @@ GITHUB_BUILD_YML_TEMPLATE = {
     'centos': GITHUB_BUILD_YML_TEMPLATE_CENTOS,
 }
 
-README_TEMPLATE = '| ![pytorch{}] ![python{}] ![{}] ![{}{}] [![](https://img.shields.io/docker/image-size/cnstark/pytorch/{})][DockerHub] | `docker pull cnstark/pytorch:{}` |'
+README_TEMPLATE = '| ![pytorch{}] ![python{}] ![{}] ![{}{}] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/{})][DockerHub] | `docker pull spxiong/pytorch:{}` |'
 
 
 def generate_build_args(os_name, os_version, python_version, pytorch_version, cuda_version, cuda_flavor=None):
