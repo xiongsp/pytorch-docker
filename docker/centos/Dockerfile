@@ -44,11 +44,24 @@ RUN if [ ! $TORCHAUDIO_VERSION ]; \
             torchvision==${TORCHVISION_VERSION}${TORCHVISION_VERSION_SUFFIX} \
             ${TORCHAUDIO}; \
     else \
-        pip install \
-            torch==${PYTORCH_VERSION}${PYTORCH_VERSION_SUFFIX} \
-            torchvision==${TORCHVISION_VERSION}${TORCHVISION_VERSION_SUFFIX} \
-            ${TORCHAUDIO} \
-            -f ${PYTORCH_DOWNLOAD_URL}; \
+        if [ $(echo $PYTORCH_DOWNLOAD_URL | grep -o "torch_stable\.html") ]; \
+        then \
+            # Original PyTorch download URL
+            pip install \
+                torch==${PYTORCH_VERSION}${PYTORCH_VERSION_SUFFIX} \
+                torchvision==${TORCHVISION_VERSION}${TORCHVISION_VERSION_SUFFIX} \
+                ${TORCHAUDIO} \
+                -f ${PYTORCH_DOWNLOAD_URL}; \
+        else \
+            # New PyTorch download URL, only suffix provided
+            pip install \
+                torch==${PYTORCH_VERSION}${PYTORCH_VERSION_SUFFIX} \
+                -f ${PYTORCH_DOWNLOAD_URL}torch/ \
+                torchvision==${TORCHVISION_VERSION}${TORCHVISION_VERSION_SUFFIX} \
+                -f ${PYTORCH_DOWNLOAD_URL}torchvision/ \
+                ${TORCHAUDIO} \
+                -f ${PYTORCH_DOWNLOAD_URL}torchaudio/; \
+        fi; \
     fi && \
     rm -r /root/.cache/pip
 

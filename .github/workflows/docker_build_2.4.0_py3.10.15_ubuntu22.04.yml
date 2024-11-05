@@ -11,7 +11,7 @@ env:
   TORCHVISION_VERSION_SUFFIX: "+cpu"
   TORCHAUDIO_VERSION: "2.4.0"
   TORCHAUDIO_VERSION_SUFFIX: "+cpu"
-  PYTORCH_DOWNLOAD_URL: "https://download.pytorch.org/whl/cpu/torch_stable.html"
+  PYTORCH_DOWNLOAD_URL: "https://download.pytorch.org/whl/"
 
   IMAGE_TAG: "2.4.0-py3.10.15-ubuntu22.04"
 

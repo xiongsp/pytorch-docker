@@ -6,7 +6,7 @@ from argparse import ArgumentParser
 #    "pytorch_version": {
 #       "cuda_version": [
 #           "pytorch_version", "cuda_version", "torchvision_version", "cuda_version",
-#           "torchaudio_version", "cuda_version", "url"
+#           "torchaudio_version", "cuda_version", "torch_url_prefix(slash at the end)"
 #       ],
 #    }
 # }
@@ -14,29 +14,29 @@ PYTORCH_VERSIONS = {
     '2.4.1': {
         'cpu': [
             '2.4.1', 'cpu', '0.19.1', 'cpu', '2.4.1', 'cpu',
-            'https://download.pytorch.org/whl/cpu/torch_stable.html',
+            'https://download.pytorch.org/whl/',
         ],
         '12.1' : [
             '2.4.1', 'cu121', '0.19.1', 'cu121', '2.4.1', 'cu121',
-            'https://download.pytorch.org/whl/cu121/torch_stable.html'
+            'https://download.pytorch.org/whl/',
         ],
         '11.8': [
             '2.4.1', 'cu118', '0.19.1', 'cu118', '2.4.1', 'cu118',
-            'https://download.pytorch.org/whl/cu118/torch_stable.html'
+            'https://download.pytorch.org/whl/',
         ],
     },
     '2.4.0': {
         'cpu': [
             '2.4.0', 'cpu', '0.19.0', 'cpu', '2.4.0', 'cpu',
-            'https://download.pytorch.org/whl/cpu/torch_stable.html',
+            'https://download.pytorch.org/whl/',
         ],
         '12.1' : [
             '2.4.0', 'cu121', '0.19.0', 'cu121', '2.4.0', 'cu121',
-            'https://download.pytorch.org/whl/cu121/torch_stable.html'
+            'https://download.pytorch.org/whl/',
         ],
         '11.8': [
             '2.4.0', 'cu118', '0.19.0', 'cu118', '2.4.0', 'cu118',
-            'https://download.pytorch.org/whl/cu118/torch_stable.html'
+            'https://download.pytorch.org/whl/',
         ],
     },
     '2.3.1': {
