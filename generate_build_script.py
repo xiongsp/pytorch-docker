@@ -11,6 +11,34 @@ from argparse import ArgumentParser
 #    }
 # }
 PYTORCH_VERSIONS = {
+    '2.5.1': {
+        'cpu': [
+            '2.5.1', 'cpu', '0.20.1', 'cpu', '2.5.1', 'cpu',
+            'https://download.pytorch.org/whl/',
+        ],
+        '12.1' : [
+            '2.5.1', 'cu121', '0.20.1', 'cu121', '2.5.1', 'cu121',
+            'https://download.pytorch.org/whl/'
+        ],
+        '12.4': [
+            '2.5.1', 'cu124', '0.20.1', 'cu124', '2.5.1', 'cu124',
+            'https://download.pytorch.org/whl/'
+        ],
+    },
+    '2.5.0': {
+        'cpu': [
+            '2.5.0', 'cpu', '0.20.0', 'cpu', '2.5.0', 'cpu',
+            'https://download.pytorch.org/whl/',
+        ],
+        '12.1' : [
+            '2.5.0', 'cu121', '0.20.0', 'cu121', '2.5.0', 'cu121',
+            'https://download.pytorch.org/whl/'
+        ],
+        '12.4': [
+            '2.5.0', 'cu124', '0.20.0', 'cu124', '2.5.0', 'cu124',
+            'https://download.pytorch.org/whl/'
+        ],
+    },
     '2.4.1': {
         'cpu': [
             '2.4.1', 'cpu', '0.19.1', 'cpu', '2.4.1', 'cpu',
@@ -563,6 +591,12 @@ CUDA_VERSIONS = {
     },
     '12.1': {
         'version_name': '12.1.0',
+        'cudnn': '8',
+        'ubuntu_available': ['20.04', '22.04'],
+        'centos_available': ['7'],
+    },
+    '12.4': {
+        'version_name': '12.4.1',
         'cudnn': '8',
         'ubuntu_available': ['20.04', '22.04'],
         'centos_available': ['7'],
