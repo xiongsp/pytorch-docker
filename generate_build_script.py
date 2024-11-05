@@ -597,7 +597,7 @@ CUDA_VERSIONS = {
     },
     '12.4': {
         'version_name': '12.4.1',
-        'cudnn': '8',
+        'cudnn': '',
         'ubuntu_available': ['20.04', '22.04'],
         'centos_available': ['7'],
     },
