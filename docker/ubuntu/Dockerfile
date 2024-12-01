@@ -4,8 +4,8 @@ FROM ${BASE_IMAGE}
 
 ENV NVIDIA_DRIVER_CAPABILITIES ${NVIDIA_DRIVER_CAPABILITIES:-compute,utility}
 
-RUN apt update && \
-    apt install -y \
+RUN apt update --allow-unauthenticated && \
+    apt install --allow-unauthenticated -y \
         wget build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev \
         libreadline-dev libffi-dev libsqlite3-dev libbz2-dev liblzma-dev && \
     apt clean && \
