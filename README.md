@@ -273,8 +273,6 @@ Note: `/path/to/project` and `/path/to/dataset` is your **own** project path and
 | Image | Pull Command |
 | -------------| -------------|
 | ![pytorch1.5.1] ![python3.8.13] ![cpu] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.5.1-py3.8.13-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.5.1-py3.8.13-ubuntu18.04` |
-| ![pytorch1.5.1] ![python3.8.13] ![cuda9.2] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.5.1-py3.8.13-cuda9.2-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.5.1-py3.8.13-cuda9.2-ubuntu18.04` |
-| ![pytorch1.5.1] ![python3.8.13] ![cuda9.2-devel] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.5.1-py3.8.13-cuda9.2-devel-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.5.1-py3.8.13-cuda9.2-devel-ubuntu18.04` |
 | ![pytorch1.5.1] ![python3.8.13] ![cuda10.1] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.5.1-py3.8.13-cuda10.1-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.5.1-py3.8.13-cuda10.1-ubuntu18.04` |
 | ![pytorch1.5.1] ![python3.8.13] ![cuda10.1-devel] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.5.1-py3.8.13-cuda10.1-devel-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.5.1-py3.8.13-cuda10.1-devel-ubuntu18.04` |
 | ![pytorch1.5.1] ![python3.8.13] ![cuda10.2] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.5.1-py3.8.13-cuda10.2-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.5.1-py3.8.13-cuda10.2-ubuntu18.04` |
@@ -287,8 +285,6 @@ Note: `/path/to/project` and `/path/to/dataset` is your **own** project path and
 | ![pytorch1.5.0] ![python3.8.13] ![cpu] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.5.0-py3.8.13-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.5.0-py3.8.13-ubuntu18.04` |
 | ![pytorch1.5.0] ![python3.8.13] ![cuda10.1] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.5.0-py3.8.13-cuda10.1-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.5.0-py3.8.13-cuda10.1-ubuntu18.04` |
 | ![pytorch1.5.0] ![python3.8.13] ![cuda10.1-devel] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.5.0-py3.8.13-cuda10.1-devel-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.5.0-py3.8.13-cuda10.1-devel-ubuntu18.04` |
-| ![pytorch1.5.0] ![python3.8.13] ![cuda9.2] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.5.0-py3.8.13-cuda9.2-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.5.0-py3.8.13-cuda9.2-ubuntu18.04` |
-| ![pytorch1.5.0] ![python3.8.13] ![cuda9.2-devel] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.5.0-py3.8.13-cuda9.2-devel-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.5.0-py3.8.13-cuda9.2-devel-ubuntu18.04` |
 | ![pytorch1.5.0] ![python3.8.13] ![cuda10.2] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.5.0-py3.8.13-cuda10.2-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.5.0-py3.8.13-cuda10.2-ubuntu18.04` |
 | ![pytorch1.5.0] ![python3.8.13] ![cuda10.2-devel] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.5.0-py3.8.13-cuda10.2-devel-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.5.0-py3.8.13-cuda10.2-devel-ubuntu18.04` |
 
@@ -297,20 +293,8 @@ Note: `/path/to/project` and `/path/to/dataset` is your **own** project path and
 | Image | Pull Command |
 | -------------| -------------|
 | ![pytorch1.4.0] ![python3.8.13] ![cpu] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.4.0-py3.8.13-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.4.0-py3.8.13-ubuntu18.04` |
-| ![pytorch1.4.0] ![python3.8.13] ![cuda9.2] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.4.0-py3.8.13-cuda9.2-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.4.0-py3.8.13-cuda9.2-ubuntu18.04` |
-| ![pytorch1.4.0] ![python3.8.13] ![cuda9.2-devel] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.4.0-py3.8.13-cuda9.2-devel-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.4.0-py3.8.13-cuda9.2-devel-ubuntu18.04` |
 | ![pytorch1.4.0] ![python3.8.13] ![cuda10.1] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.4.0-py3.8.13-cuda10.1-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.4.0-py3.8.13-cuda10.1-ubuntu18.04` |
 | ![pytorch1.4.0] ![python3.8.13] ![cuda10.1-devel] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.4.0-py3.8.13-cuda10.1-devel-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.4.0-py3.8.13-cuda10.1-devel-ubuntu18.04` |
-
-#### 1.2.0
-
-| Image | Pull Command |
-| -------------| -------------|
-| ![pytorch1.2.0] ![python3.8.13] ![cpu] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.2.0-py3.8.13-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.2.0-py3.8.13-ubuntu18.04` |
-| ![pytorch1.2.0] ![python3.8.13] ![cuda9.2] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.2.0-py3.8.13-cuda9.2-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.2.0-py3.8.13-cuda9.2-ubuntu18.04` |
-| ![pytorch1.2.0] ![python3.8.13] ![cuda9.2-devel] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.2.0-py3.8.13-cuda9.2-devel-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.2.0-py3.8.13-cuda9.2-devel-ubuntu18.04` |
-| ![pytorch1.2.0] ![python3.8.13] ![cuda10.0] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.2.0-py3.8.13-cuda10.0-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.2.0-py3.8.13-cuda10.0-ubuntu18.04` |
-| ![pytorch1.2.0] ![python3.8.13] ![cuda10.0-devel] ![ubuntu18.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/1.2.0-py3.8.13-cuda10.0-devel-ubuntu18.04)][DockerHub] | `docker pull spxiong/pytorch:1.2.0-py3.8.13-cuda10.0-devel-ubuntu18.04` |
 
 </details>
 
