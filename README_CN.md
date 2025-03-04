@@ -5,7 +5,7 @@
 [DockerHub]: https://hub.docker.com/r/spxiong/pytorch
 
 > [!NOTE]
-> 这是一个从 [cnstark/pytorch-docker](https://github.com/cnstark/pytorch-docker) 派生的项目，支持几乎各种排列组合 pytorch 1.4-2.5、python 3.8-3.12、ubuntu 18.04-22.04、centos 8 和 cuda 10.0-12.4。
+> 这是一个从 [cnstark/pytorch-docker](https://github.com/cnstark/pytorch-docker) 派生的项目，支持几乎各种排列组合 pytorch 1.4-2.6、python 3.8-3.13、ubuntu 18.04-22.04、centos 8 和 cuda 10.0-12.6。
 
 [![LICENSE](https://img.shields.io/github/license/xiongsp/pytorch-docker.svg)](https://github.com/xiongsp/pytorch-docker/blob/master/LICENSE)
 ![Docker Stars](https://img.shields.io/docker/stars/spxiong/pytorch?logo=docker)
@@ -19,6 +19,7 @@ Docker Hub: https://hub.docker.com/r/spxiong/pytorch
 
 ## 更新日志
 
+* 2025/03/04: 支持 Pytorch 2.6.0。
 * 2024/12/01: 支持 pytorch 1.4-2.0。
 * 2024/11/05: 支持 Pytorch 2.5.x。对于 2.1 及以下版本，请参考此 [DockerHub](https://hub.docker.com/r/cnstark/pytorch) 和 [Github 仓库](https://github.com/cnstark/pytorch-docker)。
 * 2024/10/10: 支持 Pytorch 2.1.x 2.2.x 2.3.x 2.4.x。
@@ -46,6 +47,7 @@ docker run -it --rm \
 ## 镜像列表
 
 <!-- Pytorch versions -->
+[pytorch2.6.0]: https://img.shields.io/badge/Pytorch-2.6.0-orange?logo=pytorch
 [pytorch2.5.1]: https://img.shields.io/badge/Pytorch-2.5.1-orange?logo=pytorch
 [pytorch2.5.0]: https://img.shields.io/badge/Pytorch-2.5.0-orange?logo=pytorch
 [pytorch2.4.1]: https://img.shields.io/badge/Pytorch-2.4.1-orange?logo=pytorch
@@ -81,6 +83,11 @@ docker run -it --rm \
 [pytorch1.2.0]: https://img.shields.io/badge/Pytorch-1.2.0-orange?logo=pytorch
 
 <!-- Python versions -->
+[python3.13.2]: https://img.shields.io/badge/Python-3.13.2-blue?logo=python
+[python3.12.9]: https://img.shields.io/badge/Python-3.12.9-blue?logo=python
+[python3.11.11]: https://img.shields.io/badge/Python-3.11.11-blue?logo=python
+[python3.10.16]: https://img.shields.io/badge/Python-3.10.16-blue?logo=python
+[python3.9.21]: https://img.shields.io/badge/Python-3.9.21-blue?logo=python
 [python3.12.7]: https://img.shields.io/badge/Python-3.12.7-blue?logo=python
 [python3.11.10]: https://img.shields.io/badge/Python-3.11.10-blue?logo=python
 [python3.10.15]: https://img.shields.io/badge/Python-3.10.15-blue?logo=python
@@ -99,6 +106,8 @@ docker run -it --rm \
 [centOS8]: https://img.shields.io/badge/CentOS-8-blue?logo=centos
 
 <!-- CUDA versions -->
+[cuda12.6]: https://img.shields.io/badge/CUDA-12.6-green?logo=nvidia
+[cuda12.6-devel]: https://img.shields.io/badge/CUDA-12.6--devel-green?logo=nvidia
 [cuda12.4-devel]: https://img.shields.io/badge/CUDA-12.4--devel-green?logo=nvidia
 [cuda12.4]: https://img.shields.io/badge/CUDA-12.4-green?logo=nvidia
 [cuda12.1]: https://img.shields.io/badge/CUDA-12.1-green?logo=nvidia
@@ -122,6 +131,51 @@ docker run -it --rm \
 [cuda10.0]: https://img.shields.io/badge/CUDA-10.0-green?logo=nvidia
 [cuda10.0-devel]: https://img.shields.io/badge/CUDA-10.0--devel-green?logo=nvidia
 [cpu]: https://img.shields.io/badge/CPU-amd64-lightgray
+
+### 2.6.0
+
+<details>
+
+| Image | Pull Command |
+| -------------| -------------|
+| ![pytorch2.6.0] ![python3.13.2] ![cpu] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.13.2-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.13.2-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.13.2] ![cuda11.8] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.13.2-cuda11.8.0-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.13.2-cuda11.8.0-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.13.2] ![cuda11.8-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.13.2-cuda11.8.0-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.13.2-cuda11.8.0-devel-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.13.2] ![cuda12.4] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.13.2-cuda12.4.1-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.13.2-cuda12.4.1-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.13.2] ![cuda12.4-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.13.2-cuda12.4.1-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.13.2-cuda12.4.1-devel-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.13.2] ![cuda12.6] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.13.2-cuda12.6.0-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.13.2-cuda12.6.0-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.13.2] ![cuda12.6-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.13.2-cuda12.6.0-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.13.2-cuda12.6.0-devel-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.12.9] ![cpu] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.12.9-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.12.9-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.12.9] ![cuda11.8] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.12.9-cuda11.8.0-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.12.9-cuda11.8.0-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.12.9] ![cuda11.8-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.12.9-cuda11.8.0-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.12.9-cuda11.8.0-devel-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.12.9] ![cuda12.4] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.12.9-cuda12.4.1-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.12.9-cuda12.4.1-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.12.9] ![cuda12.4-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.12.9-cuda12.4.1-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.12.9-cuda12.4.1-devel-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.12.9] ![cuda12.6] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.12.9-cuda12.6.0-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.12.9-cuda12.6.0-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.12.9] ![cuda12.6-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.12.9-cuda12.6.0-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.12.9-cuda12.6.0-devel-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.11.11] ![cpu] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.11.11-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.11.11-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.11.11] ![cuda11.8] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.11.11-cuda11.8.0-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.11.11-cuda11.8.0-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.11.11] ![cuda11.8-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.11.11-cuda11.8.0-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.11.11-cuda11.8.0-devel-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.11.11] ![cuda12.4] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.11.11-cuda12.4.1-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.11.11-cuda12.4.1-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.11.11] ![cuda12.4-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.11.11-cuda12.4.1-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.11.11-cuda12.4.1-devel-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.11.11] ![cuda12.6] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.11.11-cuda12.6.0-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.11.11-cuda12.6.0-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.11.11] ![cuda12.6-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.11.11-cuda12.6.0-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.11.11-cuda12.6.0-devel-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.10.16] ![cpu] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.10.16-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.10.16-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.10.16] ![cuda11.8] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.10.16-cuda11.8.0-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.10.16-cuda11.8.0-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.10.16] ![cuda11.8-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.10.16-cuda11.8.0-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.10.16-cuda11.8.0-devel-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.10.16] ![cuda12.4] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.10.16-cuda12.4.1-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.10.16-cuda12.4.1-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.10.16] ![cuda12.4-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.10.16-cuda12.4.1-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.10.16-cuda12.4.1-devel-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.10.16] ![cuda12.6] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.10.16-cuda12.6.0-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.10.16-cuda12.6.0-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.10.16] ![cuda12.6-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.10.16-cuda12.6.0-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.10.16-cuda12.6.0-devel-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.9.21] ![cpu] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.9.21-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.9.21-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.9.21] ![cuda11.8] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.9.21-cuda11.8.0-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.9.21-cuda11.8.0-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.9.21] ![cuda11.8-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.9.21-cuda11.8.0-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.9.21-cuda11.8.0-devel-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.9.21] ![cuda12.4] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.9.21-cuda12.4.1-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.9.21-cuda12.4.1-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.9.21] ![cuda12.4-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.9.21-cuda12.4.1-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.9.21-cuda12.4.1-devel-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.9.21] ![cuda12.6] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.9.21-cuda12.6.0-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.9.21-cuda12.6.0-ubuntu22.04` |
+| ![pytorch2.6.0] ![python3.9.21] ![cuda12.6-devel] ![ubuntu22.04] [![](https://img.shields.io/docker/image-size/spxiong/pytorch/2.6.0-py3.9.21-cuda12.6.0-devel-ubuntu22.04)][DockerHub] | `docker pull spxiong/pytorch:2.6.0-py3.9.21-cuda12.6.0-devel-ubuntu22.04` |
+
+</details>
+
 
 ### 2.5.1
 
