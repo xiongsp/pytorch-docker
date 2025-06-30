@@ -11,6 +11,42 @@ from argparse import ArgumentParser
 #    }
 # }
 PYTORCH_VERSIONS = {
+    '2.7.1': {
+        'cpu': [
+            '2.7.1', 'cpu', '0.22.1', 'cpu', '2.7.1', 'cpu',
+            'https://download.pytorch.org/whl/',
+        ],
+        '11.8': [
+            '2.7.1', 'cu118', '0.22.1', 'cu118', '2.7.1', 'cu118',
+            'https://download.pytorch.org/whl/',
+        ],
+        '12.6': [
+            '2.7.1', 'cu126', '0.22.1', 'cu126', '2.7.1', 'cu126',
+            'https://download.pytorch.org/whl/',
+        ],
+        '12.8': [
+            '2.7.1', 'cu128', '0.22.1', 'cu128', '2.7.1', 'cu128',
+            'https://download.pytorch.org/whl/',
+        ],
+    },
+    '2.7.0': {
+        'cpu': [
+            '2.7.0', 'cpu', '0.22.0', 'cpu', '2.7.0', 'cpu',
+            'https://download.pytorch.org/whl/',
+        ],
+        '11.8': [
+            '2.7.0', 'cu118', '0.22.0', 'cu118', '2.7.0', 'cu118',
+            'https://download.pytorch.org/whl/',
+        ],
+        '12.6': [
+            '2.7.0', 'cu126', '0.22.0', 'cu126', '2.7.0', 'cu126',
+            'https://download.pytorch.org/whl/',
+        ],
+        '12.8': [
+            '2.7.0', 'cu128', '0.22.0', 'cu128', '2.7.0', 'cu128',
+            'https://download.pytorch.org/whl/',
+        ],
+    },
     '2.6.0': {
         'cpu': [
             '2.6.0', 'cpu', '0.21.0', 'cpu', '2.6.0', 'cpu',
@@ -630,6 +666,12 @@ CUDA_VERSIONS = {
         'ubuntu_available': ['20.04', '22.04'],
         'centos_available': ['7'],
     },
+    '12.8': {
+        'version_name': '12.8.1',
+        'cudnn': '',
+        'ubuntu_available': ['20.04', '22.04'],
+        'centos_available': ['7'],
+    }
 }
 
 
@@ -841,6 +883,12 @@ def generate_github_build_yml(os_name, os_version, python_version, pytorch_versi
         'cpu' if cuda_version == 'cpu' else ('cuda' + cuda_version + ('' if cuda_flavor is None else '-' + cuda_flavor)),
         os_name, os_version, kwargs['image_tag'], kwargs['image_tag']
     ))
+    with open("tmp_readme_template.txt", "a") as f:
+        f.write(README_TEMPLATE.format(
+            pytorch_version, python_version,
+            'cpu' if cuda_version == 'cpu' else ('cuda' + cuda_version + ('' if cuda_flavor is None else '-' + cuda_flavor)),
+            os_name, os_version, kwargs['image_tag'], kwargs['image_tag']
+        ) + "\n")
     print('=' * 50)
 
 
