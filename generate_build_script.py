@@ -721,7 +721,13 @@ CUDA_VERSIONS = {
         'cudnn': '',
         'ubuntu_available': ['20.04', '22.04'],
         'centos_available': ['7'],
-    }
+    },
+    '13.0': {
+        'version_name': '13.0.2',
+        'cudnn': '',
+        'ubuntu_available': ['22.04'],
+        'centos_available': ['7'],
+    },
 }
 
 
