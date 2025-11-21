@@ -11,6 +11,56 @@ from argparse import ArgumentParser
 #    }
 # }
 PYTORCH_VERSIONS = {
+    '2.9.1': {
+        'cpu': [
+            '2.9.1', 'cpu', '0.24.1', 'cpu', '2.9.1', 'cpu',
+            'https://download.pytorch.org/whl/',
+        ],
+        '12.6': [
+            '2.9.1', 'cu126', '0.24.1', 'cu126', '2.9.1', 'cu126',
+            'https://download.pytorch.org/whl/',
+        ],
+        '12.8': [
+            '2.9.1', 'cu128', '0.24.1', 'cu128', '2.9.1', 'cu128',
+            'https://download.pytorch.org/whl/',
+        ],
+        '13.0': [
+            '2.9.1', 'cu130', '0.24.1', 'cu130', '2.9.1', 'cu130',
+            'https://download.pytorch.org/whl/',
+        ],
+    },
+    '2.9.0': {
+        'cpu': [
+            '2.9.0', 'cpu', '0.24.0', 'cpu', '2.9.0', 'cpu',
+            'https://download.pytorch.org/whl/',
+        ],
+        '12.6': [
+            '2.9.0', 'cu126', '0.24.0', 'cu126', '2.9.0', 'cu126',
+            'https://download.pytorch.org/whl/',
+        ],
+        '12.8': [
+            '2.9.0', 'cu128', '0.24.0', 'cu128', '2.9.0', 'cu128',
+            'https://download.pytorch.org/whl/',
+        ],
+        '13.0': [
+            '2.9.0', 'cu130', '0.24.0', 'cu130', '2.9.0', 'cu130',
+            'https://download.pytorch.org/whl/',
+        ],
+    },
+    '2.8.0': {
+        'cpu': [
+            '2.8.0', 'cpu', '0.23.0', 'cpu', '2.8.0', 'cpu',
+            'https://download.pytorch.org/whl/',
+        ],
+        '12.6': [
+            '2.8.0', 'cu126', '0.23.0', 'cu126', '2.8.0', 'cu126',
+            'https://download.pytorch.org/whl/',
+        ],
+        '12.8': [
+            '2.8.0', 'cu128', '0.23.0', 'cu128', '2.8.0', 'cu128',
+            'https://download.pytorch.org/whl/',
+        ],
+    },
     '2.7.1': {
         'cpu': [
             '2.7.1', 'cpu', '0.22.1', 'cpu', '2.7.1', 'cpu',
@@ -755,6 +805,16 @@ jobs:
       - name: Login DockerHub
         run: docker login --username=${{{{ secrets.DOCKER_USERNAME }}}} --password=${{{{ secrets.DOCKER_PASSWORD }}}}
 
+      - name: Free Disk Space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
+        with:
+            tool-cache: true
+            android: true
+            dotnet: true
+            haskell: true
+            large-packages: true
+            swap-storage: true
+
       - name: Build docker image
         run: docker/ubuntu/build.sh
 
@@ -796,6 +856,16 @@ jobs:
 
       - name: Login DockerHub
         run: docker login --username=${{{{ secrets.DOCKER_USERNAME }}}} --password=${{{{ secrets.DOCKER_PASSWORD }}}}
+
+      - name: Free Disk Space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
+        with:
+            tool-cache: true
+            android: true
+            dotnet: true
+            haskell: true
+            large-packages: true
+            swap-storage: true
 
       - name: Build docker image
         run: docker/centos/build.sh
