@@ -32,6 +32,16 @@ jobs:
       - name: Login DockerHub
         run: docker login --username=${{ secrets.DOCKER_USERNAME }} --password=${{ secrets.DOCKER_PASSWORD }}
 
+      - name: Free Disk Space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
+        with:
+            tool-cache: true
+            android: true
+            dotnet: true
+            haskell: true
+            large-packages: true
+            swap-storage: true
+
       - name: Build docker image
         run: docker/ubuntu/build.sh
 
