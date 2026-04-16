@@ -10,40 +10,43 @@ from argparse import ArgumentParser
 #       ],
 #    }
 # }
+
+# torchvision version, torchaudio version, and torch version should be matched.
+
 PYTORCH_VERSIONS = {
     '2.11.0': {
         'cpu': [
-            '2.11.0', 'cpu', '0.25.0', 'cpu', '2.11.0', 'cpu',
+            '2.11.0', 'cpu', '0.26.0', 'cpu', '2.11.0', 'cpu',
             'https://download.pytorch.org/whl/',
         ],
         '12.6': [
-            '2.11.0', 'cu126', '0.25.0', 'cu126', '2.11.0', 'cu126',
+            '2.11.0', 'cu126', '0.26.0', 'cu126', '2.11.0', 'cu126',
             'https://download.pytorch.org/whl/',
         ],
         '12.8': [
-            '2.11.0', 'cu128', '0.25.0', 'cu128', '2.11.0', 'cu128',
+            '2.11.0', 'cu128', '0.26.0', 'cu128', '2.11.0', 'cu128',
             'https://download.pytorch.org/whl/',
         ],
         '13.0': [
-            '2.11.0', 'cu130', '0.25.0', 'cu130', '2.11.0', 'cu130',
+            '2.11.0', 'cu130', '0.26.0', 'cu130', '2.11.0', 'cu130',
             'https://download.pytorch.org/whl/',
         ],
     },
     '2.10.0': {
         'cpu': [
-            '2.10.0', 'cpu', '0.24.1', 'cpu', '2.10.0', 'cpu',
+            '2.10.0', 'cpu', '0.25.0', 'cpu', '2.10.0', 'cpu',
             'https://download.pytorch.org/whl/',
         ],
         '12.6': [
-            '2.10.0', 'cu126', '0.24.1', 'cu126', '2.10.0', 'cu126',
+            '2.10.0', 'cu126', '0.25.0', 'cu126', '2.10.0', 'cu126',
             'https://download.pytorch.org/whl/',
         ],
         '12.8': [
-            '2.10.0', 'cu128', '0.24.1', 'cu128', '2.10.0', 'cu128',
+            '2.10.0', 'cu128', '0.25.0', 'cu128', '2.10.0', 'cu128',
             'https://download.pytorch.org/whl/',
         ],
         '13.0': [
-            '2.10.0', 'cu130', '0.24.1', 'cu130', '2.10.0', 'cu130',
+            '2.10.0', 'cu130', '0.25.0', 'cu130', '2.10.0', 'cu130',
             'https://download.pytorch.org/whl/',
         ],
     },
